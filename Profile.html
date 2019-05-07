@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+   /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%;
+width:100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  font-family: 'Sofia';
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body background="./images1/PreI.jpg">
+<div class="bg-image">
+</div>
+<div class="bg-text">
+<div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="col-3 bg-secondary text-black">
+      
+     <div class="container">
+  <h2>Profile Image</h2>
+  <div class="card" style="width:190px">
+    <img class="card-img-top" src="./images1/IMG-20180325-WA0026.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title"> Muskaan Sharma</h4>
+      <p class="card-text"> Muskaan Sharma is an Software engineer .she studying in  B.TECH CSE Batch 2k16 Chitkara University</p>
+      <a href="Profile.html" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  </div>
+<br>
+       </div>
+      <div class="col-8 bg-dark text-white">
+<div class="container">
+  <h2>form</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="name"> First Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Your name" name="fname"><br>
+       <label for="lname"> Last Name:</label>
+      <input type="text" class="form-control" id="lname" placeholder="Your name" name="name"><br>
+      <label for="email">Email:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter email" name="email"><br>
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"><br>
+      <label for="pwd">contact number:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="pswd"><br>
+    </div><br>
+
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label><br>
+    </div>
+
+    <button type="reset" class="btn btn-outline-warning">Reset</button><br><br>
+    <button type="submit" class="btn btn-outline-primary">Submit</button>
+  </form>
+</div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
